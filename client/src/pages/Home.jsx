@@ -6,6 +6,7 @@ const Home = () => {
 
   const [loading, setLoading] = useState(false)
   const[allPosts, setAllpost] = useState(null)
+  const [searchText, setsearchText] = useState('')
   return (
     <section className='max-w-7xl '>
       <div>
@@ -14,6 +15,16 @@ const Home = () => {
       </div>
       <div className='mt-16'>
         <Formfiled />
+      </div>
+
+      <div className='mt-10'>
+        {loading ? (
+          <div className='flex justify-center items-center'>
+            <Loader />
+          </div>
+        ) : (
+          <></>
+        )}
       </div>
 
     </section>
