@@ -13,8 +13,16 @@ const Create = () => {
     photo: ''
   })
 
+  const [generatingImg, setGeneratingImg] = useState(false)
+  const [loading, setLoading] = useState(false)
+
   return (
-    <div>Create</div>
+    <section className='max-w-7xl '>
+      <div>
+        <h1 className='font-extrabold text-[#222328] text-[32px]'>Create Your thoughts Here</h1>
+        <p className='mt-2 text-[#666e75] text-[16px] max-w[500px]'>Browse through imaginative creation by DALL-E AI</p>
+      </div>
+    </section>
   )
 }
 
