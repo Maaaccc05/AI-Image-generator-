@@ -42,7 +42,7 @@ const Create = () => {
             LabelName = "Your Name"
             type = "text"
             name = "name"
-            placholder = "Mac"
+            placeholder = "Mac"
             value = {form.name}
             handleChange = {handleChange}
           />
@@ -51,7 +51,7 @@ const Create = () => {
             LabelName = "prompt"
             type = "text"
             name = "prompt"
-            placholder = "a painting of a fox in the style of Starry Night"
+            placeholder = "a painting of a fox in the style of Starry Night"
             value = {form.prompt}
             handleChange = {handleChange}
             isSurpriseMe  
