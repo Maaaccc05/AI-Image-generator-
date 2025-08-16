@@ -1,21 +1,31 @@
 import React from 'react'
 
-const FormFiled = ({ LableName, type, name, placeholder, value, handleChange, isSurpriseMe, handleSurpriseMe }) => {
+const FormFiled = ({ LabelName, type, name, placeholder, value, handleChange, isSurpriseMe, handleSurpriseMe }) => {
   return (
     <div>
       <div className='flex items-center gap-2 mb-2'>
         <label htmlFor={name} className='text-sm font-medium text-gray-900'>
-            {LableName}
+            {LabelName}
         </label>
 
         {isSurpriseMe && (
           <button
               type="button"
               onClick={handleSurpriseMe}
-              className='font-semibold text-xs bg-[#ececf1] py-1 px-2 rounded-[5px] text-black'
-            > Surprise Me</button>
+              className='font-semibold text-xs bg-[#ececf1] py-1 px-2 rounded-[5px] text-black'> 
+                Surprise Me
+          </button>
         )}
       </div>
+      <input 
+        type={type}
+        id={name}
+        name={name}
+        placeholder={placeholder}
+        value={value}
+        onChange={handleChange}
+        required
+      />
     </div>
   )
 }
